@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+    font-family: siteBarber;
+}
+@font-face {
+    font-family: siteBarber;
+    src: url('font/Poppins/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: siteBarberBold;
+    src: url('font/Poppins/Poppins-Bold.ttf');
+}
+
+html, body {
+    background-color: #161616;
+    
+}
+.nav-bar{
+    display: none;
+    background-color: #161616;
+    flex-direction: column;
+    width: 100%; 
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    top: 6rem; 
+    left: 0; 
+    transform: translateY(0);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.abrir-nav{
+    border: none;
+    background-color: inherit;
+    font-size: 1.4rem;
+}
+.icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.icon-text i {
+    margin-right: 10px; 
+}
+.nav-bar, .nav-bar * {
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.nav-bar{
+    opacity: 98%;
+    background-color: #161616
+}
+
+.nav-bar a {
+    text-decoration: none; 
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.5s;
+}
+.nav-bar a:hover {
+    color: #ffc222;
+}
+.abrir-nav{
+    display: none;
+}
+header {
+    background-color: #161616;
+    display: flex;
+    color: white;
+    height: 6rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 60vw;
+}
+.menu a{
+    margin-left: 10%;
+    font-family: siteBarber;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none !important;
+    text-align: center;
+}
+.menu a:hover{
+    transition: 0.5s;
+    color: #ffc222;
+}
+
+.botao_agendar {
+    background-color: #ffc222;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-size: 1.6rem;
+    border: none;
+    font-family: siteBarber;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.botao_agendar:hover{
+    transition: 0.5s;
+    background-color: #FFFF00;
+}
+.agendar {
+    margin-right: 1%;
+}
+.risco{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+.servicos .row {
+    text-align: center;
+
+}
+.text-sobre {
+    padding: 20px;
+}
+footer {
+    padding: 20px;
+}
+
+#meuCarrossel {
+    display: block;
+    margin: 0 auto;
+}
+
+#meuCarrossel img {
+    height: 85vh; 
+    object-fit: cover; 
+}
+
+
+.carousel-control-next{
+    margin-right: 2%;
+}
+.carousel-control-prev{
+    margin-left: 2%;
+}
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: black;
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    opacity: 75%;
+
+}
+
+.servicos {
+    background-color: #161616;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+.servico-item {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+    position: relative;
+}
+
+.servico-item img {
+    max-width: 100%;
+    height: 92%;
+    border-radius: 15px;
+}
+.titulo-servico{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background-color: #161616;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+h1, .h1-nome{
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: siteBarberBold;
+}
+.h1-nome{
+    font-weight: bold;
+}
+.avaliacao{
+    width: 250px;
+    text-align: center;
+    background-color: #161616;
+    border-radius: 15px;
+}
+.text-avaliacao{
+    text-align: justify;
+    font-family: siteBarber;
+    font-size: 1.1rem;
+    padding: 2%;
+    color:whitesmoke
+}
+.avaliacoes{
+    display: flex;
+    justify-content:space-evenly ;
+}
+.h2-avaliacao{
+    color: black;
+    background-color: #ffc222;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.cont-whats{
+    color: #369b22;
+}
+.cont-insta{
+    color: #de175d;
+}
+.cont-face{
+    color: #3b5998;
+}
+.contatos a :hover{
+    transition: 0.8s;
+    color: white;
+}
+footer {
+    background-color: #1C1C1C; 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
+    border: none;
+}
+
+footer p {
+    margin: 0;
+    margin-left: 30px;
+    font-size: 0.8rem; 
+    text-align: center;
+}
+h4{
+    font-size: 1rem;
+}
+.sobre{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    background-color: #ffc222;
+    padding-bottom: 5%;
+}
+.img-sobre{
+    width: 500px;
+    height: 500px;
+    margin-left: 55px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+}
+.text-sobre{
+    width: 350px;
+    height: 300px;
+    color: black;
+}
+.p-sobre{
+    font-family: siteBarber;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.h2-sobre{
+    font-family: siteBarber;
+    font-size: 3rem;
+    color: black;
+}
+.titulo{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+}
+.titulo h1{
+    font-size: 3rem;
+}
+.contatos{
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contatos a{
+    margin: 5%;
+}
+#myBtn {
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    width: 60px;
+    height: 60px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(0, 0, 0);
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 20px; 
+    animation: arrow 2s infinite;
+}
+#myBtn i{
+    font-size: 2em;
+}
+@keyframes arrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.avaliacao{
+    width: 250px;
+    text-align: center;
+    background-color: #161616;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+}
+.checked {
+    color: orange;
+}
+iframe {
+    width: 50vw;
+    height: 35vh;
+}
+iframe{
+    border-radius: 10px;
+}
+@media(min-width:1000px) and (max-width:1200px){
+    .menu a{
+        font-size: 1.2rem;
+    }
+    .botao_agendar {
+        padding: 8px 20px;
+        font-size: 1.2rem;
+    }
+    .h1-nome{
+        font-size: 1.8rem;
+    }
+    .avaliacao{
+        width: 200px;
+    }
+
+}
+@media(max-width:999px){
+    header{
+        width: 100%;
+    }
+    .menu,.botao_agendar{
+        display: none;
+    }
+    .abrir-nav{
+        display: block;
+    }
+    .nav-bar{
+        display: none;
+       
+    }
+    
+}
+@media (max-width: 600px) {
+    
+    #meuCarrossel img {
+        height: 200px;
+    }
+
+    .servicos .row {
+        flex-direction: column;
+    }
+
+    .text-sobre{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .img-sobre {
+        display: none;
+    }
+    .avaliacoes{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .contatos a i{
+        margin-bottom: 80px;
+        font-size: 2rem;
+    }
+    .contatos{
+        width: 200px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+
+    .servicos .row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .text-sobre{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .img-sobre {
+        display: none;
+    }
+    .avaliacoes{
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+    .contatos a i{
+        margin-bottom: 80px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 1rem;
+    }
+    .p-sobre{
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1025px) {
+    
+    
+
+    .servicos .row {
+        flex-direction: row;
+    }
+
+    .text-sobre {
+        width: 50%;
+        margin: auto;
+    }
+    .avaliacao{
+        gap: 15px;
+    }
+    .contatos a i{
+        margin-bottom: 80px;
+    }
+}
+@media (min-width: 2000px) { 
+    .h2-sobre, .titulo h1, .menu a, .botao_agendar, .titulo-servico, .text-avaliacao, .h2-avaliacao, .contatos, .titulo, .servicos, .sobre, .avaliacoes, footer p {
+        font-size: 2em;
+    }
+    .p-sobre {
+        font-size: 1em;
+    }   
+    .h2-sobre {
+        font-weight: bold;
+    }
+   .titulo{
+    font-weight: bold;
+   }
+    .sobre {
+        margin-bottom: 14em;
+    }
+    .avaliacao {
+        width: 600px;
+    }
+    
+    .img-sobre {
+        width: 33%;
+        height: 33%;
+    }
+    .contatos {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contatos a i {
+        font-size: 6em;
+        margin-bottom: 120px;
+    }
+    footer p {
+        font-size: 3em;
+    }
+    
+    header {
+        height: 13rem;
+    }
+    .nome h1, .menu a, .botao_agendar {
+        font-size: 2.5em;
+    }
+    .logo img {
+        width: 215px;
+        height: 215px;
+    }
+}
